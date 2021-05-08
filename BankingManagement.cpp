@@ -307,15 +307,15 @@ void deposit_withdraw(int n, int option)
 			ac.show_account();
 			if(option==1)
 			{
-				cout<<"\n\n\tTO DEPOSITE AMOUNT ";
-				cout<<"\n\nEnter The Amount To Deposit";
+				cout<<"\n\n\t DEPOSIT AMOUNT ";
+				cout<<"\n\nEnter The Amount To Deposit- ";
 				cin>>amt;
 				ac.dep(amt);
 			}
 			if(option==2)
 			{
-				cout<<"\n\n\tTO WITHDRAW AMOUNT ";
-				cout<<"\n\nEnter The Amount To Withdraw";
+				cout<<"\n\n\t WITHDRAW AMOUNT ";
+				cout<<"\n\nEnter The Amount To Withdraw- ";
 				cin>>amt;
 				int bal=ac.retdeposit()-amt;
 				if((bal<500 && ac.rettype()=='S') || (bal<1000 && ac.rettype()=='C'))
